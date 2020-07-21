@@ -5,13 +5,11 @@
       <About />
       <b-container>
           <b-row id="card" align-v = "center">
-            <Project />
-            <Project />
-            <Project />
-            <Project />
+            <Project v-for="project in projects" :key="project.id"  :project ="project"/>
           </b-row>
       </b-container>
       <Contact />
+      <!-- <center><p>Momoh Philip 2020</p></center> -->
   </div>
 </template>
 
@@ -29,6 +27,29 @@ export default {
     About,
     Project,
     Contact
+  },
+  mounted() {
+    this.fetchData();
+  },
+  data(){
+    return{
+      projects: [],
+    };
+  },
+  methods: {
+    //api.github.com/users/Momohpheel/repos
+    fetchData(){
+     fetch('sample.json')
+     .then((res) =>  res.json())
+     .then((data) => {
+       for(let i = 0; i < 3; i++){
+        this.projects.push(data[i]);
+       }
+       
+       })
+     .catch((err) => {console.log(err)});
+     }
+
   }
 }
 </script>

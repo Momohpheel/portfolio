@@ -1,16 +1,19 @@
 <template>
     <div id="top-header">
         
-  <b-navbar toggleable="lg">
-    <b-navbar-brand class="brand" href="#">Logo</b-navbar-brand>  
-    <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
-    <b-collapse id="nav-collapse" is-nav>
-        <ul>
+  <b-navbar fixed    toggleable="xs">
+    <ul id="home">
+      <li><strong><a href="#">PHILIP</a></strong></li>
+    </ul>
+    <!-- <b-navbar-brand class="brand" href="#">Logo</b-navbar-brand>   -->
+    <!-- <b-navbar-toggle target="nav-collapse" ></b-navbar-toggle>
+    <b-collapse id="nav-collapse" is-nav> -->
+        <ul id="others">
           <li><a href="#">Home</a></li>
           <li><a href="#">About</a></li>
           <li><a href="#">Projects</a></li>
         </ul>
-    </b-collapse>
+    <!-- </b-collapse> -->
   </b-navbar>
 
 
@@ -19,7 +22,7 @@
 
 <script>
 export default {
-    
+    name: "TopHeader"
 }
 </script>
 
@@ -33,11 +36,15 @@ export default {
 #top-header{
     box-shadow: 0.5px 0.5px white;
 }
-ul {
+#others {
   list-style-type: none;
   padding: 0;
- 
-  float: right;
+ float: right;
+}
+#home {
+  list-style-type: none;
+  padding: 0;
+ float: left;
 }
 li {
   display: inline-block;
@@ -46,4 +53,5 @@ li {
 a {
   color: #42b983;
 }
+
 </style>
