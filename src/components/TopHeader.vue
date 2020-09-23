@@ -1,57 +1,82 @@
 <template>
     <div id="top-header">
-        
-  <b-navbar fixed    toggleable="xs">
-    <ul id="home">
-      <li><strong><a href="#">PHILIP</a></strong></li>
-    </ul>
-    <!-- <b-navbar-brand class="brand" href="#">Logo</b-navbar-brand>   -->
-    <!-- <b-navbar-toggle target="nav-collapse" ></b-navbar-toggle>
-    <b-collapse id="nav-collapse" is-nav> -->
-        <ul id="others">
-          <li><a href="#">Home</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Projects</a></li>
-        </ul>
-    <!-- </b-collapse> -->
-  </b-navbar>
-
-
+      <div class="header">
+        <header>
+          <p class="name">PHILIP</p>
+        </header>
+      </div>
+      <!-- <div class="tab">
+        <main >
+          <ul>
+            
+            <a href=""><li class="tabs">Bio</li></a>
+            
+            <a href="#"><li class="tabs">Contact</li></a>
+          </ul>
+        </main>
+      </div> -->
     </div>
 </template>
 
 <script>
 export default {
-    name: "TopHeader"
+    name: "TopHeader",
+    data (){
+      return{
+        
+      }
+    },
+    method: {
+      bio(){
+        
+      }
+    }
 }
 </script>
 
 <style>
-/* .nav{
-    float: right;
-    position : absolute;
-    padding-left: 823px; 
-} */
-
+*{
+  font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+  margin: 0;
+}
 #top-header{
-    box-shadow: 0.5px 0.5px white;
+ display: flex;
 }
-#others {
-  list-style-type: none;
-  padding: 0;
- float: right;
-}
-#home {
-  list-style-type: none;
-  padding: 0;
- float: left;
-}
-li {
-  display: inline-block;
-  margin: 0 10px;
-}
-a {
-  color: #42b983;
+.header{
+  flex: 6;
 }
 
+  .header header p{
+    font-size: 2.4em;
+    font-weight: 800;
+    padding: 20px 40px;
+    opacity: 0.7;
+    color: #fff;
+    
+  }
+
+  .name:hover{
+    text-shadow: 0px 3px coral;
+    font-size: 2.5em;
+    color: #fff;
+    opacity: 1
+  }
+  
+  .tab ul{
+    list-style-type: none;
+    margin: 30px;
+  }
+  .tabs{
+    display: inline;
+    flex: 4;
+    color: #fff;
+     padding: 20px 20px;
+
+  }
+  .tab main ul a:hover{
+    padding: 10px 10px;
+    background-color: coral;
+    
+
+  }
 </style>
