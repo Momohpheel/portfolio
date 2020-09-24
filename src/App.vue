@@ -21,50 +21,8 @@
       <section >
         
         <div id="about">
-          
-        
-   
-
-            
-            <!-- <div class="me">
-            <div class="image">
-              <img :src="require('C:/laragon/portfolio-master/src/assets/logo.png')" width="3%">
-            </div>
-              <p>
-                I am a junior backend developer based in Lagos, Nigeria. I'm familiar with a number of programming languages 
-                and frameworks, such as Php, JavaScript, Java, HTML, CSS, Laravel and Vue Js.
-                I have done some mini-projects which can be found on my Github repositories.
-                I am passionate about doing more in tech, learning, meeting tech gurus, 
-                and gaining so much experience. 
-                I am very keen to take new responsibilities with bigger operations and high challenges.
-                I am a fast learner and can adapt to new situations.
-                I’m passionate building software’s that will ease our day-to-day activities,
-                I enjoy solving complex problems using web technologies. When
-                I’m not coding you can find me geeking about designs and making cool designs also...
-                I am also fluent in verbal and written skills in English and Yoruba language.
-              </p>
-            </div>
-          </div> -->
         </div>
         <div id="contact">
-          
-        
-          <!-- <div class="email">
-            <h3>My Contact!!</h3>
-            <div class="form-group">
-            <label>Subject</label>
-            <input type="text" class="input" placeholder="" name="">
-            </div>
-            <div class="form-group">
-            <label>Email</label>
-            <input type="text" class="input" placeholder="" name="">
-            </div>
-            <div class="form-group">
-            <label>Message</label>
-            <textarea type="text" class="input" placeholder="" name=""></textarea>
-            </div>
-            <input type="submit" class="button">
-          </div> -->
         </div>
       </section>
 
@@ -103,7 +61,7 @@
 </template>
 
 <script >
-//import { SMTPClient } from 'emailjs';
+//import Email from './smtp.js';
 
 import TopHeader from './components/TopHeader.vue'
 
@@ -119,7 +77,7 @@ export default {
     }
   },
  methods: {
-  
+ 
    bioButton(e){
      e.preventDefault();
 
@@ -213,6 +171,18 @@ export default {
      about.innerHTML = "";
     
    },
+//    sendEmail(e){
+//      Email.send({
+//     Host : "smtp.mailtrap.io",
+//     Username : "<Mailtrap username>",
+//     Password : "<Mailtrap password>",
+//     To : 'recipient@example.com',
+//     From : "sender@example.com",
+//     Subject : "Test email",
+//     Body : "<html><h2>Header</h2><strong>Bold text</strong><br></br><em>Italic</em></html>"
+// }).then(
+//   message => alert(message)
+// );   }
    
  }
 }
@@ -434,4 +404,86 @@ img:hover{
 
 
 }
+
+@media(max-width: 375px){
+
+img{
+  width: 5%;
+}
+
+img:hover{
+  width: 7%;
+}
+.bio h4{
+  font-size: 21px;
+}
+.intro h1{
+  font-size: 23px;
+  
+}
+.me{
+  margin:10px 35px;
+  background-color: rgba(0,0,0,0.95);
+  width: 60%;
+  position:absolute;
+  
+}
+.me p {
+  color: #fff;
+  font-size: 80%;
+  
+  text-align: center;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+#app{
+  background-image: url('./assets/sample.png');
+  /* background-color: rgba(0,0,0,0.95); */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-size: cover;
+  background-position: bottom;
+  min-height: 90vh;
+}
+.tab ul{
+    list-style-type: none;
+    margin: 30px 20px;
+    
+  }
+  .tabs{
+    display: inline;
+   
+    color: #fff;
+     padding: 15px 10px;
+
+  }
+  .tab main ul li:hover{
+    padding: 10px 10px;
+    background-color: coral;
+    
+
+  }
+.me{
+  margin: 0px 60px;
+  background-color: rgba(0,0,0,0.95);
+  min-height: 60vh;
+  position: absolute;
+}
+.me p {
+  color: #fff;
+  margin: 10px 10px;
+  padding: 20px 10px;
+  
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+.image{
+  margin: 10px 20px;
+  padding: 20px 20px 0px 470px;
+  
+  
+}
+
+}
+
 </style>
