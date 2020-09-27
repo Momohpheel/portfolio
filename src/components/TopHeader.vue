@@ -83,15 +83,15 @@ export default {
     .header header p{
     font-size: 1.4em;
     font-weight: 800;
-    padding: 20px 40px;
+    padding: 20px 30px;
     opacity: 0.7;
     color: #fff;
     
   }
 
   .name:hover{
-    text-shadow: 0px 3px coral;
-    font-size: 2.5em;
+    text-shadow: 0px 2px coral;
+    font-size: 1.5em;
     color: #fff;
     opacity: 1
   }

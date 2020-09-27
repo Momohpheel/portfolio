@@ -46,7 +46,7 @@
             </div>
             <div class="buttons">
               <a href="https://github.com/Momohpheel"><button class="button">Projects</button></a>
-              <a href="./assets/MomohPhilip.docx" download><button class="button">Resume</button></a>
+              <a href="../assets/MomohPhilip.docx" download><button class="button">Resume</button></a>
             </div>
         </main> 
 
