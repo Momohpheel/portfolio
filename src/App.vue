@@ -407,7 +407,7 @@ img:hover{
   
  
 .showcase{
-  margin: 30px;
+  margin: 20px;
 }
 .showcase main{
   padding: 15px 0px;
