@@ -79,4 +79,21 @@ export default {
     
 
   }
+  @media(max-width: 335px){
+    .header header p{
+    font-size: 1.4em;
+    font-weight: 800;
+    padding: 20px 40px;
+    opacity: 0.7;
+    color: #fff;
+    
+  }
+
+  .name:hover{
+    text-shadow: 0px 3px coral;
+    font-size: 2.5em;
+    color: #fff;
+    opacity: 1
+  }
+  }
 </style>

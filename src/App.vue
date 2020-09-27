@@ -202,9 +202,11 @@ export default {
   background-size: cover;
   background-position: bottom;
   min-height: 100vh;
+  
 }
 .colo{
   background-color: rgba(0,0,0,0.95);
+  min-height: 100vh;
 }
 a {
   text-decoration: none;
@@ -401,36 +403,151 @@ img:hover{
 
 }
 
-@media(max-width: 375px){
-
-img{
-  width: 5%;
+@media(max-width: 335px){
+  
+ 
+.showcase{
+  margin: 30px;
+}
+.showcase main{
+  padding: 30px 0px;
 }
 
-img:hover{
-  width: 7%;
+.intro{
+  padding-top: 70px;
+  color: #fff;
+  
+}
+.intro h1 {
+  font-size: 24px;
+}
+.bio{
+  color: #fff;
 }
 .bio h4{
-  font-size: 21px;
+  font-size: 14px;
 }
-.intro h1{
-  font-size: 23px;
+ul{
+  list-style-type: none;
+  padding: 0;
+}
+.pl li{
+  display: inline;
+  margin: 0px 15px 0px 0px;
+}
+img:hover{
+  width: 6%;
+}
+.button{
+  background-color: #333;
+  /* opacity: 0.6; */
+  padding: 5px 30px;
+  margin-right: 5px;
+  /* border-radius: 16px 10px 16px 10px; */
+  color: #fff;
+  border: none;
   
 }
+.top-header{
+  display: flex;
+}
+.head{
+  flex: 3;
+}
+  .tab ul{
+    list-style-type: none;
+    margin: 5px;
+    margin-top: 25px;
+  }
+  .tabs{
+    display: inline;
+   
+    color: #fff;
+     padding: 5px 10px;
+
+  }
+  .tab main ul li:hover{
+    padding: 5px 5px;
+    background-color: coral;
+    
+
+  }
+
+
+.button:hover{
+  background-color: #fff;
+  color: #000;
+  opacity: 1;
+  padding: 9px 25px;
+  border: 1px solid coral;
+}
+
+#main-footer{
+  margin-top: 169px;
+
+  color:#fff;
+  text-align: center;
+  padding: 20px;
+}
+
 .me{
-  margin:10px 35px;
+  margin: 0px 28px;
   background-color: rgba(0,0,0,0.95);
-  width: 60%;
-  position:absolute;
-  
+  min-height: 40vh;
+  position: absolute;
 }
 .me p {
   color: #fff;
-  font-size: 80%;
-  
+  margin: 0px 10px;
+  padding: 0px 20px;
   text-align: center;
   font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 80%;
+}
+.image{
+  margin: 10px 20px;
+  padding: 20px 20px 0px 470px;
+  
+  
+}
 
+.email{
+  margin: 0px 10px;
+  background-color: rgba(0,0,0,0.95);
+  min-height: 60vh;
+  position: absolute;
+  padding: 10px 80px;
+}
+.email .form-group{
+  padding-bottom: 15px;
+  
+}
+.email label {
+  color: #fff;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  display: block;
+
+}
+.email h3{
+  color: #fff;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  padding-bottom: 15px;
+}
+.email input[type="text"]{
+  width: 120%;
+  padding: 8px;
+}
+.email textarea{
+  width: 120%;
+  padding: 8px;
+}
+.colo{
+  background-color: rgba(0,0,0,0.95);
+  min-height: 100vh;
+}
+.close{
+  color: red;
+  padding-left: 40px;
 }
 #app{
   background-image: url('./assets/sample.png');
@@ -439,45 +556,7 @@ img:hover{
   -moz-osx-font-smoothing: grayscale;
   background-size: cover;
   background-position: bottom;
-  min-height: 90vh;
-}
-.tab ul{
-    list-style-type: none;
-    margin: 30px 20px;
-    
-  }
-  .tabs{
-    display: inline;
-   
-    color: #fff;
-     padding: 15px 10px;
-
-  }
-  .tab main ul li:hover{
-    padding: 10px 10px;
-    background-color: coral;
-    
-
-  }
-.me{
-  margin: 0px 60px;
-  background-color: rgba(0,0,0,0.95);
-  min-height: 60vh;
-  position: absolute;
-}
-.me p {
-  color: #fff;
-  margin: 10px 10px;
-  padding: 20px 10px;
-  
-  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-
-}
-.image{
-  margin: 10px 20px;
-  padding: 20px 20px 0px 470px;
-  
-  
+  min-height: 100vh;
 }
 
 }
