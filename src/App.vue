@@ -36,11 +36,11 @@
             </div>
             <div class="pl">
                 <ul>
-                  <li><img :src="require('C:/laragon/portfolio-master/src/assets/laravel.png')" width="3%"></li>
-                  <li><img :src="require('C:/laragon/portfolio-master/src/assets/logo.png')" width="3%"></li>
-                  <li><img :src="require('C:/laragon/portfolio-master/src/assets/mysql2.png')" width="4% "></li>
-                  <li><img class="git" :src="require('C:/laragon/portfolio-master/src/assets/git.png')" width="4%"></li>
-                  <li><img :src="require('C:/laragon/portfolio-master/src/assets/python.png')" width="4%"></li>
+                  <li><img :src="require('../src/assets/laravel.png')" width="3%"></li>
+                  <li><img :src="require('../src/assets/logo.png')" width="3%"></li>
+                  <li><img :src="require('../src/assets/mysql2.png')" width="4% "></li>
+                  <li><img class="git" :src="require('../src/assets/git.png')" width="4%"></li>
+                  <li><img :src="require('../src/assets/python.png')" width="4%"></li>
 
                 </ul>
             </div>
