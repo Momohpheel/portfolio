@@ -410,7 +410,7 @@ img:hover{
   margin: 30px;
 }
 .showcase main{
-  padding: 30px 0px;
+  padding: 15px 0px;
 }
 
 .intro{
