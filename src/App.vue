@@ -71,11 +71,7 @@ export default {
     TopHeader,
    
   },
-  data(){
-    return {
-    
-    }
-  },
+ 
  methods: {
  
    bioButton(e){
