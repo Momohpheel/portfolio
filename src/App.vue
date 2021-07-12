@@ -11,8 +11,8 @@
         <main >
           <ul>
             
-            <li class="tabs" @click.alt="bioButton">Bio</li>
-          <li class="tabs" @click.ctrl="contactButton">Contact</li>
+            <li class="tabs" @click="bioButton">Bio</li>
+          <li class="tabs" @click="contactButton">Contact</li>
           </ul>
         </main>
       </div>
