@@ -11,8 +11,8 @@
         <main >
           <ul>
             
-            <li class="tabs" @click="bioButton">Bio</li>
-          <li class="tabs" @click="contactButton">Contact</li>
+            <li class="tabs" @click.alt="bioButton">Bio</li>
+          <li class="tabs" @click.ctrl="contactButton">Contact</li>
           </ul>
         </main>
       </div>
@@ -32,7 +32,7 @@
                 <h1>Hi, I'm <span>Momoh</span> Philip!</h1>
             </div>
             <div class="bio">
-                <h4>I'm a Fullstack Engineer and an aspiring Data Analyst based in Lagos, Nigeria.</h4>                 
+                <h4>I'm a Backend Engineer and an aspiring Fullstack Engineer based in Lagos, Nigeria.</h4>                 
             </div>
             <div class="pl">
                 <ul>
@@ -46,7 +46,7 @@
             </div>
             <div class="buttons">
               <a href="https://github.com/Momohpheel"><button class="button">Projects</button></a>
-              <a href="../assets/MomohPhilip.docx" download><button class="button">Resume</button></a>
+              <a href="https://drive.google.com/file/d/1wdK2-KL39WG7-nSZoxXfd9dEWYmGr035/view?usp=sharing" download><button class="button">Resume</button></a>
             </div>
         </main> 
 
