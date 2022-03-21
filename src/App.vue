@@ -40,7 +40,7 @@
                   <li><img :src="require('../src/assets/logo.png')" width="3%"></li>
                   <li><img :src="require('../src/assets/mysql2.png')" width="4% "></li>
                   <li><img class="git" :src="require('../src/assets/git.png')" width="4%"></li>
-                  <li><img :src="require('../src/assets/python.png')" width="4%"></li>
+                  <!-- <li><img :src="require('../src/assets/python.png')" width="4%"></li> -->
 
                 </ul>
             </div>
@@ -50,9 +50,9 @@
             </div>
         </main> 
 
-        <footer id="main-footer">
+        <!-- <footer id="main-footer">
           Copyright &copy; 2020 momohmayowa14@gmail.com
-        </footer>
+        </footer> -->
 
       </div>
     </div>
@@ -289,11 +289,9 @@ img:hover{
 }
 
 #main-footer{
-  margin-top: 169px;
-
   color:#fff;
   text-align: center;
-  padding: 20px;
+  padding-top: 80px;
 }
 
 .me{
@@ -482,13 +480,7 @@ img:hover{
   border: 1px solid coral;
 }
 
-#main-footer{
-  margin-top: 169px;
 
-  color:#fff;
-  text-align: center;
-  padding: 20px;
-}
 
 .me{
   margin: 0px 28px;
